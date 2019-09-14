@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import { DataButton } from "./components/data-button";
+import { Tree } from "./components/tree";
 
+const AppContainer = styled.div`
+  background-color: #282c34;
+  height: 100%;
+  display: flex;
+`;
+//
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <div className="menu">
+        <DataButton />
+      </div>
+      <Tree />
+    </AppContainer>
   );
-}
+};
 
 export default App;
