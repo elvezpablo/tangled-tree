@@ -16,7 +16,7 @@ const ButtonStyle = styled.button`
 const getData = () => {
   console.log("data");
   store.read("characters").then((data: any) => {
-    console.log(data);
+    console.log(JSON.stringify(data));
   });
 };
 

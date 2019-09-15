@@ -1,0 +1,3 @@
+const getCharacters = () => {};
+
+export { getCharacters };
